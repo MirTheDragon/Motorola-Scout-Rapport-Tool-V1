@@ -100,23 +100,29 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;MAGICKCORE_HDRI_ENABLE=1;MAGICKCORE_QUANTUM_DEPTH=16;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Program Files\ImageMagick-7.1.2-Q16-HDRI\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Program Files\ImageMagick-7.1.2-Q16-HDRI\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>CORE_RL_Magick++_.lib;CORE_RL_MagickWand_.lib;CORE_RL_MagickCore_.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
     </Link>
     <PreBuildEvent>
-      <Command>set "IMBIN=C:\Program Files\ImageMagick-7.1.2-Q16-HDRI\bin"
-robocopy "%IMBIN%" "$(TargetDir)" *.dll *.xml /XO /NP /NJH /NJS
-exit /b 0
-</Command>
+      <Command>
+      </Command>
     </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
