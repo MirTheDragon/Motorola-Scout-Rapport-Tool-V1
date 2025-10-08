@@ -4,6 +4,8 @@
 // ask whether to apply ImageMagick modulate (default 75,125,100), optionally add a hue
 // indicator PNG to an edge, saving results next to sources.
 
+
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -21,6 +23,9 @@ namespace fs = std::filesystem;
 
 #include <sstream>
 #include <cstdlib>
+
+#include "docx_report.h"
+
 
 // Run magick.exe with given arguments
 static bool run_magick(const std::string& args)
